@@ -7,16 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularCalculator';
-  subText = ''; // The text that should appear in the sub-display
-mainText = ''; // The text that should appear in the main display
-operand1: number; // The first operand
-operand2: number; // The second operand
-operator = ''; // The operator
+  subText = ''; 
+mainText = ''; 
+operand1: number; 
+operand2: number; 
+operator = ''; 
 calculationString = ''; 
-// This is the string that denotes the operation being performed
 answered = false; 
-// A flag to check whether the solution has been processed
-operatorSet = false; // You'll see how this is used soon
+
+operatorSet = false; 
 pressKey(key: string) {
   if (key === '/' || key === 'x' || key === '-' || key === '+') {
      const lastKey = this.mainText[this.mainText.length - 1];
